@@ -28,4 +28,6 @@ console.log('code:', code);
 
 // setabi
 const abi = JSON.parse(fs.readTextFile('contracts/todo.abi'));
-fibosClient.setabiSync(config.contract.name, abi);
+console.log('abi:', abi);
+res = fibosClient.setabiSync(config.contract.name, abi);
+console.log('result:', res);
